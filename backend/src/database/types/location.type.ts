@@ -6,6 +6,6 @@ export interface ILocation {
     country: string,
     countryCode: string,
     city: string,
-    zipcode?: string,
+    zipCode?: string,
     street?: string,
 }

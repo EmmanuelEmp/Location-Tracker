@@ -28,12 +28,16 @@ const locationSchema = new Schema({
     countryCode: {
         type: String,
         required: true,
+        uppercase: true,
+        trim: true,
+        minLength: 2,
+        maxLength: 3
     },
     city: {
         type: String,
         required: true
     },
-    zipcode: {
+    zipCode: {
         type: String,
         required: false
     },
@@ -45,4 +49,4 @@ const locationSchema = new Schema({
 
 locationSchema.index({ latitude: 1, longitude: 1}, { unique: false});
 
-export const locationModel = model<ILocation, any>('Location', locationSchema);
+export const Location = model<ILocation, any>('Locations', locationSchema);
