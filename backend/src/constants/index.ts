@@ -1,5 +1,4 @@
-import { env } from "process";
+import { env } from 'process';
 
-export const PORT: number = Number(env.PORT || "3000");
-export const MONGOURI: string = env.MONGOURI || "";
-
+export const PORT: number = Number(env.PORT || '3000');
+export const MONGOURI: string = env.MONGOURI || '';
