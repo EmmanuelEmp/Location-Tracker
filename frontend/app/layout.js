@@ -1,5 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Image from 'next/image'
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,6 +18,66 @@ export default function RootLayout({ children }) {
         <div className='container'>
           {children}
         </div>
+
+        <footer>
+
+          <div className="footer-div">
+
+            <div className="footer-div-inner active">
+              <Image
+                src={"/assests/home.png"}
+                width={25}
+                height={25}
+                alt='home'
+              />
+
+              <p className="footer-pgh">
+                Home
+              </p>
+            </div>
+
+            <div className="footer-div-inner">
+              <Image
+                src={"/assests/compass.png"}
+                width={25}
+                height={25}
+                alt='compass'
+              />
+
+              <p className="footer-pgh">
+                Activity
+              </p>
+            </div>
+
+            <div className="footer-div-inner">
+              <Image
+                src={"/assests/list.png"}
+                width={25}
+                height={25}
+                alt='History'
+              />
+
+              <p className="footer-pgh">
+                History
+              </p>
+            </div>
+
+            <div className="footer-div-inner">
+              <Image
+                src={"/assests/settings.png"}
+                width={25}
+                height={25}
+                alt='Settings'
+              />
+
+              <p className="footer-pgh">
+                Settings
+              </p>
+            </div>
+
+          </div>
+
+        </footer>
 
       </body>
     </html>

@@ -243,9 +243,10 @@ input::placeholder {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  /* height: 95vh; */
   padding: 1rem 0;
   color: black;
+  margin-bottom: 2rem;
 }
 
 
@@ -383,4 +384,262 @@ header {
   border-radius: 1.875rem;
   border: 1px solid #26CFE5;
   background: #FFF;
+}
+
+
+.locationTag {
+  width: 21.5rem;
+  height: 2.125rem;
+  border-radius: 1.75rem;
+  border: 1px solid #075A65;
+  /* background: rgba(38, 207, 229, 0.00); */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .1rem;
+  position: relative;
+}
+
+.loactionTags {
+  width: 7.475rem;
+  height: 1.75rem;
+  border-radius: 1.75rem;
+  background: rgba(38, 207, 229, 0.17);
+  text-align: center;
+  align-items: center;
+}
+
+.locationTags-2 {
+  position: absolute;
+  left: 6.9rem;
+  background: #075A65;
+  z-index: -1;
+}
+
+.locationTags-pgh {
+  color: #FFF;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.locationTags-pgh-1 {
+  color: #26CFE5;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.locationPlace-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  gap: 1rem;
+}
+
+.locationPlace {
+  flex: 0 0 auto;
+  display: flex;
+  width: 20.875rem;
+  justify-content: space-between;
+
+  border-radius: 0.5rem;
+  border: 2px solid #077483;
+  background: #FFF;
+  box-shadow: 0px 4px 4.8px 0px rgba(0, 0, 0, 0.22);
+  padding: .4rem;
+}
+
+.locationPlaceImg {
+  background-image: url("/assests/cafe-1.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+
+  width: 47%;
+  height: 15rem;
+
+  border-radius: 0.3125rem;
+
+}
+
+.locationPlaceInfo {
+  width: 47%;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  /* align-items: flex-start; */
+}
+
+.locationPlaceInfo-header {
+  color: #762110;
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.locationPlaceInfo-about {
+  width: 60%;
+  /* height: 3.75rem; */
+
+  color: #000;
+
+  font-size: .75rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.locationPlaceInfo-reviewSpan {
+  display: inline-flex;
+  gap: .3rem;
+  align-items: center;
+}
+
+.locationPlaceInfo-reviewSpan-pgh-1 {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.locationPlaceInfo-reviewSpan-pgh-2 {
+  color: #000;
+  font-size: 0.95rem;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+}
+
+.locationPlaceInfo-extra {
+  display: flex;
+  width: 100%;
+  gap: .7rem;
+}
+
+.locationPlaceInfo-extra-moreInfo {
+  display: flex;
+  gap: .4rem;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 0.3125rem;
+  border: 1px solid #843F2C;
+  background: #FFF;
+
+  width: 5.875rem;
+  height: 2.5625rem;
+  flex-shrink: 0;
+}
+
+.locationPlaceInfo-extra-h3 {
+  color: #762110;
+  font-size: 0.825rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.locationPlaceInfo-extra-bookmark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 5.875rem;
+  height: 2.5625rem;
+
+  border-radius: 0.3125rem;
+  border: 1px solid #843F2C;
+  background: #FFF;
+}
+
+.locationPlaceInfo-extra-bookmark-h4 {
+  color: #762110;
+  font-size: 0.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.action-div {
+  width: 9.3125rem;
+  height: 2.0625rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 .3rem;
+
+  border-radius: 18px;
+  border: 2px solid #075A65;
+  background: #FFF;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.action-div-pgh {
+  color: #0F5E24;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+footer {
+  /* width: 23.4375rem; */
+  height: 2.6rem;
+
+  border-radius: 0.625rem 0.625rem 0rem 0rem;
+  background: rgba(38, 207, 229, 0.94);
+
+  position: relative;
+}
+
+.footer-div {
+
+  position: absolute;
+  top: -1.9rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.footer-div-inner {
+  width: 3.8rem;
+  height: 3.8rem;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.46));
+
+  background-color: white;
+
+  border-radius: 6rem;
+  aspect-ratio: 1;
+  border: .1rem solid #077483;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #077483;
+  gap: .1rem;
+}
+
+.footer-div-inner.active {
+  border: .1rem solid white;
+  background-color: #077483;
+  stroke-width: 2px;
+  color: #FFF;
+}
+
+.footer-pgh {
+  /* color: #077483; */
+  font-size: 0.625rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
 }
