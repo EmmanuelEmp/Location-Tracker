@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
 
-        <div className='inner-container gap'>
+        <div className='container'>
           {children}
         </div>
 
