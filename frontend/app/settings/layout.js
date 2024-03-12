@@ -10,7 +10,7 @@
 
 export default function SettingsLayout({ children }) {
   return (
-    <section>
+    <section className="settings">
       {children}
     </section>
   )
