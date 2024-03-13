@@ -10,6 +10,14 @@ export default function Settings() {
   return (
     <>
       <Image
+        src={"/assests/settings.png"}
+        width={24.92}
+        height={24.92}
+        alt='settings'
+        className='profile-setting'
+      />
+
+      <Image
         src={"/assests/male.png"}
         width={161.504}
         height={161.504}
