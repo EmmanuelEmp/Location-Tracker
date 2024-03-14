@@ -1,5 +1,7 @@
 import Image from 'next/image'
 
+import Link from 'next/link';
+
 export default function Home() {
   return (
     <>
@@ -284,16 +286,18 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="action-div">
-          <p className="action-div-pgh">Lets Go Now</p>
+        <Link className='action-link' href={`/activity`}>
+          <div className="action-div">
+            <p className="action-div-pgh">Lets Go Now</p>
 
-          <Image
-            src={"/assests/telegram.png"}
-            width={20}
-            height={20}
-            alt='telegram'
-          />
-        </div>
+            <Image
+              src={"/assests/telegram.png"}
+              width={20}
+              height={20}
+              alt='telegram'
+            />
+          </div>
+        </Link>
       </main>
     </>
   );

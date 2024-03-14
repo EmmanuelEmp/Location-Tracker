@@ -10,7 +10,7 @@
 
 export default function HistoryLayout({ children }) {
   return (
-    <section>
+    <section className="history gap">
       {children}
     </section>
   )

@@ -10,7 +10,7 @@
 
 export default function ActivityLayout({ children }) {
   return (
-    <section>
+    <section className="activity">
       {children}
     </section>
   )

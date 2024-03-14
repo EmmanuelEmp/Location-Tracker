@@ -9,13 +9,15 @@ export default function Settings() {
 
   return (
     <>
-      <Image
-        src={"/assests/settings.png"}
-        width={24.92}
-        height={24.92}
-        alt='settings'
-        className='profile-setting'
-      />
+      <Link className='profile-setting-link' href={`/settings/editprofile`}>
+        <Image
+          src={"/assests/settings.png"}
+          width={24.92}
+          height={24.92}
+          alt='settings'
+          className='profile-setting'
+        />
+      </Link>
 
       <Image
         src={"/assests/male.png"}
