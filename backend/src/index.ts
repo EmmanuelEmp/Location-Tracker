@@ -1,15 +1,30 @@
-import mongoose from 'mongoose';
 import express from 'express';
-import * as C from './constants';
+//import * as C from './constants';
+import mongoose from 'mongoose';
+import dotenv from 'dotenv';
+import config from 'config';
+import connectDB from './config/connect';
+import routes from "./routes/user.routes";
+import authRoutes from './routes/user.routes';
+import bodyParser from 'body-parser';
+import cookieParser from "cookie-parser";
+import cors from "cors";
 
+
+const PORT = process.env.PORT || 5000
 const app = express();
 
-app.use(express.json());
+app.use(cors());
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
 
-mongoose.connect(C.MONGOURI).then(() => {
-    console.log('Connected to Location Tracker DB.')
-});
+app.use(cookieParser());
 
-app.listen(C.PORT, () => {
-    console.log(`Server running on PORT: ${C.PORT}`)
+
+
+app.listen(PORT, async () => {
+    console.log(`Server running on PORT: ${PORT}`);
+    await connectDB()
+
+    app.use("/auth/", authRoutes); 
 });
