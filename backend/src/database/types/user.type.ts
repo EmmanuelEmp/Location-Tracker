@@ -6,6 +6,12 @@ export interface UserInput {
     lastName: string,
     email: string,
     password: string,
+    mobileNumber: string,
+    age: number,
+    address: string,
+    gender: string,
+    country: string,
+    photo: string
 }
 
 export interface UserDocument extends UserInput, mongoose.Document {

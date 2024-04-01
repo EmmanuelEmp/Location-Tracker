@@ -5,15 +5,20 @@ const bcryptSalt = process.env.BCRYPT_SALT;
 
 
 const userSchema = new mongoose.Schema({
- firstName: {type: String, reqiured: true},
-
- lastName: {type: String, reqiured: true},
-
- email: {type: String, reqiured: true, unique: true},
-
- password: {type: String, reqiured: true,},
- 
-
+ firstName: {type: String, required: true},
+ lastName: {type: String, required: true},
+ email: {type: String, required: true, unique: true},
+ password: {type: String, required: true,},
+ mobileNumber: {type: String, required: true,
+    default: "+234"
+},
+ age: {type: Number, required: true},
+ address: {type: String},
+ gender: {type: String, required: true},
+ country: {type: String, required: true},
+ photo: {type: String, required: true,
+    default: "https://i.ibb.co/4pDNDk1/avatar.png"
+}
 }, {
     timestamps: true
 }) 
